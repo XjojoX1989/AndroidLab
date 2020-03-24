@@ -5,7 +5,7 @@
     <data>
 
         <variable
-            name="item"
+            name="item1"
             type="project.chris.androidLab.binding.ItemModel" />
     </data>
 
@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:textSize="24sp"
-            android:text="@{item.itemLabel}" />
+            android:text="@{item1.itemLabel}" />
     </LinearLayout>
 
 </layout>

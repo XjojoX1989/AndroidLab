@@ -14,14 +14,21 @@ class ProductActivity : AppCompatActivity() {
         val list: ArrayList<ItemModel?> = getFakeData()
         val binding: ActivityProcudtListBinding = DataBindingUtil.setContentView(this, R.layout.activity_procudt_list)
         binding.rv.layoutManager = LinearLayoutManager(this)
-        binding.rv.adapter = ProductListAdapter(list)
+        binding.rv.adapter = object : ProductListAdapter() {
+            override fun getItemCount(): Int = list.size
+
+            override fun getData(): ArrayList<ItemModel?> {
+                return list
+            }
+
+        }
     }
 
     private fun getFakeData(): java.util.ArrayList<ItemModel?> {
         val list = ArrayList<ItemModel?>()
 
-        val itemModel: ItemModel = ItemModel()
         for (i in 0..100) {
+            val itemModel = ItemModel()
             itemModel.itemLabel = i.toString()
             list.add(i, itemModel)
         }
