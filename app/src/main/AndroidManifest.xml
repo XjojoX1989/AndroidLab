@@ -12,7 +12,7 @@
         <activity android:name="project.chris.androidLab.MainActivity">
 
         </activity>
-        <activity android:name="project.chris.androidLab.binding.ProductActivity" >
+        <activity android:name=".mvvm.NameActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

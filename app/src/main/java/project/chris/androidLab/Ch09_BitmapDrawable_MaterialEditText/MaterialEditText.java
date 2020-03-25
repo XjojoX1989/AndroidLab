@@ -11,7 +11,7 @@ import android.util.AttributeSet;
 
 import project.chris.androidLab.Utils;
 
-public class MaterialEditText extends android.support.v7.widget.AppCompatEditText {
+public class MaterialEditText extends androidx.appcompat.widget.AppCompatEditText {
     Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
     private float TEXT_HORIZONTAL_SPACING = Utils.dp2px(6);
     private float TEXT_VERTICAL_SPACING = Utils.dp2px(14);

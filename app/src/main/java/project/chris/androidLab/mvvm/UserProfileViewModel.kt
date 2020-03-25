@@ -1,9 +1,23 @@
 package project.chris.androidLab.mvvm
 
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import project.chris.androidLab.User
+
 
 class UserProfileViewModel : ViewModel() {
-
-    val userId:String = TODO()
-    val user:User = TODO()
+//    private val users: MutableLiveData<List<User>> by lazy {
+//        MutableLiveData<List<User>>().also {
+//            loadUsers()
+//        }
+//    }
+//
+//    fun getUsers(): LiveData<List<User>> {
+//        return users
+//    }
+//
+//    fun loadUsers() {
+//
+//    }
 }
